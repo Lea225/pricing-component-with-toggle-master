@@ -1,0 +1,140 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: 
+    url('images/bg-top.svg') top right,
+    url('images/bg-bottom.svg') bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% cover;
+    background-color: hsl(240, 78%, 98%);
+    font-family: 'Montserrat',sans-serif;
+}
+.stats{
+    opacity: 0.5;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+section{
+   padding: 100px;   
+}
+main a{
+    width: 100%;
+    font-size: 0.8em;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    padding: 10px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+hr{
+    border: 1px solid hsl(234, 14%, 74%, 0.5);
+}
+hr:nth-of-type(4) {
+    margin-bottom: 30px;
+}
+h1,h2,p{
+    color: hsl(233, 13%, 49%);
+}
+.card-1 p{
+    color: hsl(0, 0%, 100%);
+}
+.card-1 h2,.card-1 h3{
+    color: hsl(0, 0%, 100%);
+}
+h2{
+    font-size: 1em;
+}
+h3{
+    font-size: 3.5em;
+    color: hsl(232, 13%, 33%);
+}
+.toggle-icon {
+    width: 40px;
+    height: 20px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    background-color: hsl(228, 45%, 44%);
+    transition: background-color 0.3s ease;
+}
+.toggle-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+    background-color: hsl(0, 0%, 100%);
+}
+.toggle-icon.active .toggle-circle {
+    transform: translateX(-10px);
+}
+.price-container {
+    display: none; 
+}
+.price-container.active {
+    display: block;
+}
+.monthly{
+    margin-left: 20px;
+}
+.annually{
+    margin-right: 20px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card,.card-1{
+    width: 35%;
+    padding: 30px;
+    border-radius: 5px;
+}
+.card{
+    background-color: hsl(0, 0%, 100%);
+}
+.card-1{
+    height: 67vh;
+    background: linear-gradient(135deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.card a{
+    color: hsl(0, 0%, 100%);
+    border-image: linear-gradient(135deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%)) 1;
+    background: linear-gradient(135deg,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+.card a:hover{
+    border: 1px solid;
+    background: transparent;
+    color: hsl(237, 63%, 64%);
+}
+.card-1 a{
+    color: hsl(237, 63%, 64%);
+    background-color: hsl(0, 0%, 100%);
+}
+.card-1 a:hover{
+    border: 1px solid hsl(0, 0%, 100%);
+    background: transparent;
+    color: hsl(0, 0%, 100%);
+}
+@media screen and (max-width: 1000px) {
+    section{
+        padding: 70px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .card,.card-1{
+        width: 100%;
+    }
+    .card-1{
+        margin: 50px 0;
+        height: auto;
+    }
+}
